@@ -1,0 +1,10 @@
+# Ignore font files in app/assets/fonts
+app/assets/fonts/*
+
+# Ignore all images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg

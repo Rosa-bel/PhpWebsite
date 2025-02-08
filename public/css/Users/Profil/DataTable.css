@@ -1,0 +1,190 @@
+/* DataTable Wrapper */
+.datatable-wrapper {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Table Title */
+.datatable-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+/* Table Wrapper for Horizontal Scroll on Mobile */
+.tablewrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+/* Header Styles */
+.table thead th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap;
+}
+
+/* Cell Styles */
+.table td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+/* Row Hover Effect */
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+/* Link Styles */
+.table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.table a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Zebra Striping */
+.table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .datatable-wrapper {
+        padding: 0.5rem;
+    }
+    
+    .datatable-title {
+        font-size: 1.25rem;
+    }
+    
+    .table td, 
+    .table th {
+        padding: 0.75rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .datatable-wrapper {
+        box-shadow: none;
+    }
+    
+    .table {
+        border: 1px solid #ddd;
+    }
+    
+    .table th {
+        background-color: #f8f9fa !important;
+        color: #333 !important;
+    }
+}
+
+
+
+/* Search Bar Container */
+.search-bar {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+}
+
+/* Search Input */
+.search-bar input[type="number"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #2d3748;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.search-bar input[type="number"]:focus {
+    outline: none;
+    border-color: #455C6E;
+    box-shadow: 0 0 0 3px rgba(69, 92, 110, 0.1);
+}
+
+/* Remove number input arrows */
+.search-bar input[type="number"]::-webkit-inner-spin-button,
+.search-bar input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+.search-bar input[type="number"]::placeholder {
+    color: #a0aec0;
+}
+
+/* Search Button */
+.search-bar button {
+    padding: 0.75rem 1.5rem;
+    background-color: #455C6E;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #3d4f5f;
+    transform: translateY(-1px);
+}
+
+.search-bar button:active {
+    transform: translateY(0);
+}
+
+
+.search-bar button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(69, 92, 110, 0.2);
+}
+
+
+@media screen and (max-width: 480px) {
+    .search-bar {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .search-bar button {
+        width: 100%;
+    }
+}
